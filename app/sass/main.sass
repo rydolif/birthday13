@@ -2,7 +2,9 @@
 @import "base"
 @import "page"
 
-
+.header-content, .choose, .work, .contacts
+	background-attachment: fixed
+	
 .section
 	overflow: hidden
 
@@ -404,7 +406,7 @@
 		background-color: #fff
 		&:hover
 			&::before
-				animation: color .2s linear 1 forwards
+				animation: color .8s linear 1 forwards
 
 			h4, p, a
 				color: #fff
@@ -424,9 +426,7 @@
 			top: -15px
 			bottom: -15px
 			background: linear-gradient(-225deg, #895a99, #4b2694)
-			animation: color-back .2s linear 1 forwards
-
-
+			animation: color-back .8s linear 1 forwards
 
 		&-none
 			&::before
@@ -1034,11 +1034,6 @@
 
 		a
 			margin-right: 70px
-
-
-.work
-	min-height: 400px
-	background: transparent
 
 
 @import "media" // Always at the end
